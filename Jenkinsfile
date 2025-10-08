@@ -4,8 +4,8 @@ pipeline {
     stage('') {
       agent any
       steps {
-        sh 'pwd'
-        echo 'Done pwd'
+        mvn clean package
+        echo 'Done!'
       }
     }
 
